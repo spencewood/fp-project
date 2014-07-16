@@ -1,5 +1,15 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1= Project
+  form(role='form')
+    .row
+      .col-md-8
+        .form-group
+          input.form-control(type='text', name='title', placeholder='Title')
+        .form-group
+          input.form-control(type='text', name='subtitle', placeholder='Subtitle')
+        .form-group
+          textarea.form-control(name='body', rows='20', placeholder='Write your story')
+
+    button.btn.btn-default(type='submit') Submit
