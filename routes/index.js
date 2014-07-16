@@ -9,7 +9,7 @@ var pubnub = require('pubnub').init({
 pubnub.subscribe({
   channel: 'fp-demo',
   callback: function(message){
-    console.log(message);
+    //console.log(message);
   }
 });
 
