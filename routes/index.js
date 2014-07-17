@@ -25,6 +25,7 @@ router.post('/projects', function(req, res) {
     message: {
       title: req.body.title,
       subtitle: req.body.subtitle,
+      cover: req.body.cover,
       body: req.body.body
     }
   });
